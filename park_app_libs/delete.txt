@@ -1,0 +1,11 @@
+
+let i=0
+let jj=null;
+for file in $(find . -name "*qgis")
+do
+let i++;
+jj=$file;
+echo $jj;
+
+done
+echo "There are $i files ending in .conf"

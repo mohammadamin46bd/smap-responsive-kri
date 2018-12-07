@@ -1,0 +1,72 @@
+<div style="display:block" id="printSection">
+    <form action="" role="form">
+        <div class="form-group"><input maxlength="40" type="text" class="form-control" id="sprint_header" name="mapTitle" placeholder="${tip_header}"></div>
+        <div class="form-group" style="margin-bottom:0px"><textarea maxlength="100" style="resize:none" class="form-control" id="sprint_descript" name="comment" placeholder="${tip_descript}" rows="2" /></div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h5>${layout}</h5>
+                <div class="btn-group" data-toggle="buttons"><label style="margin-top:10px" class="btn btn-default" id="sprint_a3_label"><input type="radio"name="paperFormat"value="A3"id="sprint_a3">A3</label><label style="margin-top:10px" class="btn btn-default active" id="sprint_a4_label"><input type="radio"name="paperFormat"value="A4"id="sprint_a4"checked>A4</label><label style="margin-top:10px" class="btn btn-default" id="sprint_a5_label"><input type="radio"name="paperFormat"value="A5"id="sprint_a5">A5</label></div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h5>${resolution} (dpi)</h5>
+                <div class="btn-group" data-toggle="buttons"><label style="margin-top:10px" class="btn btn-default active"><input type="radio"name="dpi"value="96"id="sprint_96"checked>96</label><label style="margin-top:10px" class="btn btn-default"><input type="radio"name="dpi"value="300"id="sprint_300">300</label></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h5>${orientation}</h5>
+                <div class="btn-group" data-toggle="buttons"><label style="margin-top:10px" class="btn btn-default active" id="sprint_portrait_label"><input type="radio"name="orientation"value="Portrait"id="sprint_portrait"checked>${portrait}</label><label style="margin-top:10px" class="btn btn-default" id="sprint_landscape_label"><input type="radio"name="orientation"value="Landscape"id="sprint_landscape">${landscape}</label></div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="checkbox" style="margin-bottom:0px"><label><input name="legend"type="checkbox">${legend}</label></div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px">
+            <div id="adjustSection3" class="col-xs-12 col-sm-6">
+                <div class="btn-group" data-toggle="buttons"><button style="margin-top:10px;font-weight:normal" type="button" id="minimize_alternative" class="btn btn-default">Anpassa utskriftsområdet</button></div>
+            </div>
+			
+		<div id="select_scale_div" class="col-xs-12 col-sm-6">
+         <h5>Välj skala:</h5>
+         <select id="select_scale" style="margin-top: 10px;display:table-row;width:50%;opacity:0.5;"  class="form-control">
+            <option  value=""> &nbsp;&nbsp;&nbsp;Standard</option>
+            <option value="500000"> &nbsp;&nbsp;&nbsp;1:500000</option>
+			<option value="200000"> &nbsp;&nbsp;&nbsp;1:200000</option>
+			<option value="150000"> &nbsp;&nbsp;&nbsp;1:150000</option>
+			<option value="100000"> &nbsp;&nbsp;&nbsp;1:100000</option>
+			<option value="80000"> &nbsp;&nbsp;&nbsp;1:80000</option>
+			<option value="50000"> &nbsp;&nbsp;&nbsp;1:50000</option>
+			<option value="40000"> &nbsp;&nbsp;&nbsp;1:40000</option>
+			<option value="30000"> &nbsp;&nbsp;&nbsp;1:30000</option>
+			<option value="20000"> &nbsp;&nbsp;&nbsp;1:20000</option>
+			<option value="15000"> &nbsp;&nbsp;&nbsp;1:15000</option>
+			<option value="10000"> &nbsp;&nbsp;&nbsp;1:10000</option>
+			<option value="8000"> &nbsp;&nbsp;&nbsp;1:8000</option>
+			<option value="5000"> &nbsp;&nbsp;&nbsp;1:5000</option>
+			<option value="4000"> &nbsp;&nbsp;&nbsp;1:4000</option>
+			<option value="3000"> &nbsp;&nbsp;&nbsp;1:3000</option>
+			<option value="2000"> &nbsp;&nbsp;&nbsp;1:2000</option>
+			<option value="1500"> &nbsp;&nbsp;&nbsp;1:1500</option>
+			<option value="1000"> &nbsp;&nbsp;&nbsp;1:1000</option>
+			<option value="800"> &nbsp;&nbsp;&nbsp;1:800</option>
+			<option value="500"> &nbsp;&nbsp;&nbsp;1:500</option>
+			<option value="400"> &nbsp;&nbsp;&nbsp;1:400</option>
+			<option value="300"> &nbsp;&nbsp;&nbsp;1:300</option>
+			<option value="200"> &nbsp;&nbsp;&nbsp;1:200</option>
+			<option value="100"> &nbsp;&nbsp;&nbsp;1:100</option>
+            </select>
+           </div>
+			
+			
+        </div>
+        <div class="row" style="">
+            <div class="col-xs-12 col-sm-8">
+                <div class="checkbox " id="conditionsLink" style="margin-bottom:15px"><label><input name="conditions"type="checkbox"> ${conditionsHeader}</label></div><button style="margin-top:10px" type="button" style="display:table" id="anvandarvillkoren" class="btn btn-default btn-xs">Läs mer om användarvillkoren</button>
+                <div style="display:none" id="conditions" class="print-conditions">${conditions}<br>
+                    <div id="store" class="checkbox"><input name="storeAnswer" type="checkbox" disabled><label>${confirm}</label></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4" id="submitDiv"><button style="margin-top:10px" type="submit" disabled data-loading-text="${loading}" class="btn btn-primary btn-lg">${create}</button></div>
+        </div>
+    </form>
+</div>

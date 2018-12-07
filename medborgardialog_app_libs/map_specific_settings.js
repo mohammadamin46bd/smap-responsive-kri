@@ -1,0 +1,1 @@
+var mapSpecificSettings = { showHideTuristOrthophotoOnMap: true}

@@ -1,0 +1,11 @@
+a {
+	cursor: pointer;
+}
+
+#sharer-bottom {
+	margin:100px;
+}
+
+#sharer-bottom .sharer-icon {
+	margin-right: 10px;
+}

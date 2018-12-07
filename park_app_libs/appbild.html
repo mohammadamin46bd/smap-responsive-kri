@@ -1,0 +1,79 @@
+<!DOCTYPE html>   
+<!--[if lt IE 7 ]> <html lang="se" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="se" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="se" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="se" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="se" class="no-js"> <!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!--[if IE]><![endif]-->
+		<meta http-equiv="Cache-control" content="public">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, target-densitydpi=medium-dpi, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta name="apple-mobile-web-app-title" content="smap responsive">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+		<title></title>
+
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/appicons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/appicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/appicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/appicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../img/appicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/appicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../img/appicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon-precomposed" href="../img/appicons/apple-touch-icon.png">
+		<link rel="apple-touch-startup-image" href="../img/appicons/Default-Landscape.jpg" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+		<link rel="apple-touch-startup-image" href="../img/appicons/Default-Portrait.jpg" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+		<link rel="apple-touch-startup-image" href="../img/appicons/Default.jpg" media="screen and (max-device-width: 320px)">
+
+
+		<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAMAAADjcdz2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAABUUExURQAAACxFe////yxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFeyxFe+kUpQQAAAAbdFJOUwAAAAYQFyAwMUBQYHCAj5+vv8/S1t/p7u/0/akzb+IAAACGSURBVBgZBcEBQoJQAECxp/0gUgQsy9z979lW1X7c4RhVVU/AparqE7BVNfZ93ICj6uOPY9zB1nztBesMx7g+BcwX1rEjYG+e5gd0h/tSM9By7JdpusxtQLXcHjw7gJqBZQVqApYrUG1gGw9QTfD1fhrLuh+3qtXrd5xOVVXV98/b6Xyuqn8hwBFVlPApigAAAABJRU5ErkJggg==" />
+		
+
+
+	<!-- !CSS -->
+	<style type="text/css">
+  	/*Normalize*/
+
+  	.ui-widget-header {background: #023f88;}
+  </style>
+  
+  
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+	
+	
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="krstd_comp.css">	
+	<script>smap=null;photo_master={};photo_master.all_text_urls={header:"Bildhantering för bildvisning, uppladdning och redaring. Välj ett mode typ och välj objekttypen för bildbehandling."};photo_master.getTextContent=function(t){var e="innerText"in t?"innerText":"textContent";return e};photo_master._draw_image_header=function(t){var e=document.getElementById("images_header_master_div");img_headerContent='<h4 style="margin-bottom:0;" id="img_headerContent_id">'+t+"</h4>";e.appendChild($(img_headerContent)[0])};photo_master._draw_image_handeling_master=function(){var t=document.getElementById("images_handeling_master_div");var e='<div class="modal-body" style="position: relative;">'+'<div class="row">'+'<div class="col-xs-12 col-sm-6">'+"<b>Mode typ:</b>"+"</div>"+'<div class="col-xs-12 col-sm-6">'+'<div class="btn-group" data-toggle="buttons">'+'<label style="margin-top:10px" class="btn btn-default active" id="show_label_id"><input type="radio" name="select_mode" value="show" id="show_input_id" checked>Visa</label>'+'<label style="margin-top:10px" class="btn btn-default" id="upload_label_id"><input type="radio" name="select_mode" value="upload" id="upload_input_id">Ladda upp</label>'+'<label style="margin-top:10px" class="btn btn-default" id="delete_label_id"><input type="radio" name="select_mode" value="delete" id="delete_input_id">Ta bort</label>'+"</div>"+"</div>"+"</div>"+"</div>";var a='<div class="modal-body" style="position: relative;">'+'<div class="row">'+'<div class="col-xs-12 col-sm-6">'+"<b >Object typ:</b>"+"</div>"+'<div class="col-xs-12 col-sm-6">'+'<div class="btn-group" data-toggle="buttons">'+'<label style="margin-top:10px" class="btn btn-default active" id="sko_label_id"><input type="radio" name="select_geoobject" value="Skotselpunkt" id="sko_input_id" checked>Skotselpunkt</label>'+'<label style="margin-top:10px" class="btn btn-default" id="plats_label_id"><input type="radio" name="select_geoobject" value="Plats" id="plats_input_id">Plats</label>'+'<label style="margin-top:10px" class="btn btn-default" id="omrade_label_id"><input type="radio" name="select_geoobject" value="Omrade" id="omrade_input_id">Område</label>'+"</div>"+"</div>"+"</div>"+"</div>";var i=img_headerContent='<h5 style="margin-bottom:0;width: 100%;float:left;" id="map_activity_text_help_id">Fel</h5>';var o='<div class="modal-body" style="position: relative;">'+'<div class="row">'+'<div class="col-xs-12 col-sm-6">'+'<div class="btn-group" data-toggle="buttons">'+'<label style="margin-top:10px" class="btn btn-default active" id="show_map_label_id"><input type="radio" name="show_map" value="ShowMap" id="show_map_input_id" checked>Visa Kartan</label>'+'<label style="margin-top:10px" class="btn btn-default" id="hide_map_label_id"><input type="radio" name="show_map" value="Plats" id="hide_map_input_id">Dölja karta</label>'+"</div>"+"</div>"+"</div>"+"</div>";t.appendChild($(e)[0]);t.appendChild($(a)[0]);t.appendChild($(i)[0]);t.appendChild($(o)[0])};photo_master._image_handling_button_action_single=function(t,e){var a=$("iframe")[0],i=a.contentWindow.document,o=document.getElementById("map_activity_text_help_id");var d=$("iframe")[1],s=d.contentWindow.document;if(photo_master.show_input_id[0].checked===true){if(photo_master.sko_input_id[0].checked){if(t==="map"){smap.cmd.removeAllMapLayer(),smap.cmd.showLayer(smap.cmd.getLayerConfig("v_lekplatsredskap"));o[photo_master.getTextContent(o)]="Välje ett skotsel punkt från kartan för att visa bilder"}else if(t==="action"){if(e){if(e.id.match("v_lekplatsredskap")&&e.id.match("v_lekplatsredskap").indexOf("v_lekplatsredskap")>=0){var l="https://kartor.kristianstad.se/park/parkbild.html?mode=show&sko_id="+e.properties.skotselobj_id;d.style.display="block";d.setAttribute("src",l)}}}}else if(photo_master.plats_input_id[0].checked){if(t==="map"){smap.cmd.removeAllMapLayer(),smap.cmd.showLayer(smap.cmd.getLayerConfig("plats"));o[photo_master.getTextContent(o)]="Välje ett plats från kartan för att visa bilder"}else if(t==="action"){if(e){if(e.id.match("plats")&&e.id.match("plats").indexOf("plats")>=0){var l="https://kartor.kristianstad.se/park/parkbild.html?mode=show&plats_id="+e.properties.plats_id;d.style.display="block";d.setAttribute("src",l)}}}}else if(photo_master.omrade_input_id[0].checked){if(t==="map"){smap.cmd.removeAllMapLayer(),smap.cmd.showLayer(smap.cmd.getLayerConfig("omrade"));o[photo_master.getTextContent(o)]="Välje ett område från kartan för att visa bilder"}else if(t==="action"){if(e){if(e.id.match("omrade")&&e.id.match("omrade").indexOf("omrade")>=0){var l="https://kartor.kristianstad.se/park/parkbild.html?mode=show&omrade_id="+e.properties.omrade_id;d.style.display="block";d.setAttribute("src",l)}}}}else{console.log("Do nothing")}}else if(photo_master.upload_input_id[0].checked){if(photo_master.sko_input_id[0].checked){if(t==="map"){smap.cmd.removeAllMapLayer(),smap.cmd.showLayer(smap.cmd.getLayerConfig("v_lekplatsredskap"));o[photo_master.getTextContent(o)]="Välje ett skotsel punkt från kartan för att ladda upp bilder"}else if(t==="action"){if(e){if(e.id.match("v_lekplatsredskap")&&e.id.match("v_lekplatsredskap").indexOf("v_lekplatsredskap")>=0){var l="https://kartor.kristianstad.se/park/parkbild.html?mode=upload&sko_id="+e.properties.skotselobj_id;d.style.display="block";d.setAttribute("src",l)}}}}else if(photo_master.plats_input_id[0].checked){if(t==="map"){smap.cmd.removeAllMapLayer(),smap.cmd.showLayer(smap.cmd.getLayerConfig("plats"));o[photo_master.getTextContent(o)]="Välje ett plats från kartan för att ladda upp bilder"}else if(t==="action"){if(e){if(e.id.match("plats")&&e.id.match("plats").indexOf("plats")>=0){var l="https://kartor.kristianstad.se/park/parkbild.html?mode=upload&plats_id="+e.properties.plats_id;d.style.display="block";d.setAttribute("src",l)}}}}else if(photo_master.omrade_input_id[0].checked){if(t==="map"){smap.cmd.removeAllMapLayer(),smap.cmd.showLayer(smap.cmd.getLayerConfig("omrade"));o[photo_master.getTextContent(o)]="Välje ett område från kartan för att ladda upp bilder"}else if(t==="action"){if(e){if(e.id.match("omrade")&&e.id.match("omrade").indexOf("omrade")>=0){var l="https://kartor.kristianstad.se/park/parkbild.html?mode=upload&omrade_id="+e.properties.omrade_id;d.style.display="block";d.setAttribute("src",l)}}}}else{console.log("Do nothing")}}else if(photo_master.delete_input_id[0].checked){if(photo_master.sko_input_id[0].checked){if(t==="map"){smap.cmd.removeAllMapLayer(),smap.cmd.showLayer(smap.cmd.getLayerConfig("v_lekplatsredskap"));o[photo_master.getTextContent(o)]="Välje ett skotsel punkt från kartan för att ta bort bilder"}else if(t==="action"){if(e){if(e.id.match("v_lekplatsredskap")&&e.id.match("v_lekplatsredskap").indexOf("v_lekplatsredskap")>=0){var l="https://kartor.kristianstad.se/park/parkbild.html?mode=delete&sko_id="+e.properties.skotselobj_id;d.style.display="block";d.setAttribute("src",l)}}}}else if(photo_master.plats_input_id[0].checked){if(t==="map"){smap.cmd.removeAllMapLayer(),smap.cmd.showLayer(smap.cmd.getLayerConfig("plats"));o[photo_master.getTextContent(o)]="Välje ett plats från kartan för att ta bort bilder"}else if(t==="action"){if(e){if(e.id.match("plats")&&e.id.match("plats").indexOf("plats")>=0){var l="https://kartor.kristianstad.se/park/parkbild.html?mode=delete&plats_id="+e.properties.plats_id;d.style.display="block";d.setAttribute("src",l)}}}}else if(photo_master.omrade_input_id[0].checked){if(t==="map"){smap.cmd.removeAllMapLayer(),smap.cmd.showLayer(smap.cmd.getLayerConfig("omrade"));o[photo_master.getTextContent(o)]="Välje ett område från kartan för att ta bort bilder"}else if(t==="action"){if(e){if(e.id.match("omrade")&&e.id.match("omrade").indexOf("omrade")>=0){var l="https://kartor.kristianstad.se/park/parkbild.html?mode=delete&omrade_id="+e.properties.omrade_id;d.style.display="block";d.setAttribute("src",l)}}}}else{console.log("Do nothing")}}else{console.log("Do nothing")}};photo_master._image_handling_button_action=function(){photo_master.show_input_id=$("#show_input_id");photo_master.upload_input_id=$("#upload_input_id");photo_master.delete_input_id=$("#delete_input_id");photo_master.sko_input_id=$("#sko_input_id");photo_master.plats_input_id=$("#plats_input_id");photo_master.omrade_input_id=$("#omrade_input_id");photo_master.show_map_input_id=$("#show_map_input_id");photo_master.hide_map_input_id=$("#hide_map_input_id");photo_master.show_input_id.on("change",function(){photo_master._image_handling_button_action_single("map")}),photo_master.upload_input_id.on("change",function(){photo_master._image_handling_button_action_single("map")});photo_master.delete_input_id.on("change",function(){photo_master._image_handling_button_action_single("map")});photo_master.sko_input_id.on("change",function(){photo_master._image_handling_button_action_single("map")});photo_master.plats_input_id.on("change",function(){photo_master._image_handling_button_action_single("map")});photo_master.omrade_input_id.on("change",function(){photo_master._image_handling_button_action_single("map")});photo_master.show_map_input_id.on("change",function(){var t=$("iframe")[0];t.style.display="block"});photo_master.hide_map_input_id.on("change",function(){var t=$("iframe")[0];t.style.display="none"})};photo_master._draw_object_selection_karta=function(){var t=document.getElementById("object_selection_map_master_div");var e=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;if(e<321){var a="250px"}else if(e<480){var a="300px"}else{var a="350px"}var i="https://kartor.kristianstad.se/park/?&hideallmodules=true&parkeditable=false&hideSearchModule=false";var o='<iframe  id="map_iframe_id" width="100%" height="'+a+'" src="'+i+'"></iframe>';t.appendChild($(o)[0])};photo_master._draw_show_upload_delete_div=function(){var t=document.getElementById("action_master_div");var e=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;if(e<321){var a="250px"}else if(e<480){var a="300px"}else{var a="450px"}var i="";var o='<iframe style="display:none;" id="show_upload_delste_iframe_id" width="100%" height="'+a+'" src="'+i+'"></iframe>';t.appendChild($(o)[0])};photo_master._draw_phote_master=function(){photo_master._draw_image_header(photo_master.all_text_urls.header);photo_master._draw_image_handeling_master();photo_master._draw_object_selection_karta();photo_master._draw_show_upload_delete_div();photo_master._image_handling_button_action();var t=$("iframe")[0];t.onload=function(){window.setTimeout(function(){smap=window.frames[0].window.smap;photo_master.show_input_id.change();photo_master.show_map_input_id.change()},2e3);var t=this.contentWindow.document;var e=$(t).find(".leaflet-popup-pane")[0];e.onchange=function(){var t=smap.core.selectInst.lastSelectedFeatureSingle;photo_master._image_handling_button_action_single("action",t)}}};</script>
+	
+	
+</head>
+
+<body onload="photo_master._draw_phote_master();">
+  <div class="container">  
+
+<div class="row">
+  <div class="twelwe columns">
+    <div class="fastighet u-cf">
+	
+  
+	  
+      <div style="width: 100%;float:left;" id="images_header_master_div"></div>	  
+      <div style="width: 100%;float:left;" id="images_handeling_master_div"></div>
+	  <div style="width: 100%;float:left;" id="object_selection_map_master_div"></div>
+	  <div style="width: 100%;float:left;" id="action_master_div"></div>
+	  
+   
+   
+  </div>
+</div>
+
+
+  </div>
+  
+
+</body>
+</html>
