@@ -1,2 +1,2 @@
 # smap-responsive-kri
-# Kristianstads kommun smap-responsive code brunch. Only client side is available here.
+Kristianstads kommun smap-responsive code brunch. Only client side is available here.
