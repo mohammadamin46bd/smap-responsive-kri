@@ -1,0 +1,448 @@
+#lswitch-btn {
+  font-size: 2em;
+  z-index: 1001;
+  position: absolute;
+  left: 0px;
+  bottom: 80px;
+  padding: 0.11em 0.3em 0.2em 0.28em;
+  border: 1px solid #999;
+  border-width: 1px 1px 1px 0;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  border-radius: 0 0.4em 0.4em 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#lswitch-btn span {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+#lswitch-btn:hover {
+  background-color: rgba(240,240,240,0.8);
+}
+#lswitch-btn.lswitch-btn-outslided {
+  margin-left: -32px;
+}
+.lsw-angle-turned {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.lswitch-btnhide.btn {
+  display: table-cell;
+  right: 0;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  float: right;
+  margin-top: -0.4em;
+  outline: 0;
+}
+.lswitch-btnhide.btn i {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.lswitch-btnhide.btn:focus {
+  outline: 0;
+}
+.rotate-90 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.mapdiv-slidetransition {
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+}
+.lswitch-panel .panel {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.lswitch-panelslide {
+  -webkit-transition: margin-left 300ms ease;
+  transition: margin-left 300ms ease;
+}
+.lswitch-panel {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70%;
+  background-color: #38454e;
+  height: auto;
+  max-width: 320px;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 1px;
+  padding-top: 5px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar !important /* Nasty bug fix Required for WP8 IE10!!! */;
+  font-size: 0.9em;
+}
+.lswitch-panel .panel-heading {
+  border-radius: 0;
+  border: none;
+  border: 1px solid #ccc;
+  border-width: 1px 1px 0 1px;
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-bottom: 2px;
+  background-color: #fff;
+  padding: 0.75em 1em;
+  font-size: 1.1em;
+  letter-spacing: 0px;
+}
+.lswitch-cat {
+  text-shadow: none !important;
+  background-image: none !important;
+  text-shadow: none;
+  background-image: none;
+  white-space: nowrap;
+  background: none;
+  background-color: #fff;
+}
+.lswitch-cat span {
+  margin-left: 0.7em;
+  white-space: nowrap;
+}
+.lswitch-cat.open i {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lswitch-catcont {
+  height: 0;
+  overflow: hidden;
+  overflow-x: visible;
+  border: none;
+  opacity: 0;
+  border-color: #fff;
+  border-color: rgba(255,255,255,0);
+}
+.lswitch-catcont a:first-child {
+  margin-top: 2px;
+}
+.lswitch-catcont.lswitch-catcont-visible {
+  height: auto;
+  opacity: 1;
+  background-color: none;
+  overflow: visible;
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0px 2px 6px inset;
+  box-shadow: rgba(0,0,0,0.5) 0px 2px 6px inset;
+}
+.lswitch-catcont.lswitch-catcont-visible .lswitch-cat {
+  padding-left: 2.3em;
+}
+.lswitch-catcont.lswitch-catcont-visible .lswitch-catcont .lswitch-cat {
+  padding-left: 3.9em;
+}
+.lswitch-catcont.lswitch-catcont-visible .lswitch-catcont .lswitch-catcont.lswitch-catcont-visible a {
+  padding-left: 5.2em;
+}
+.lswitch-catcont.lswitch-catcont-visible .lswitch-catcont a {
+  padding-left: 3.3em;
+}
+.lswitch-catcont a {
+  border-radius: 0 !important;
+  letter-spacing: -1px;
+  white-space: inherit;
+}
+.lswitch-catcont.lswitch-catcont-visible a {
+  padding-left: 2.5em;
+  -webkit-transition: padding-left 0.2s;
+  transition: padding-left 0.2s;
+}
+.lswitch-legend {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.2em;
+}
+.lswitch-legend-big {
+  display: block;
+  position: absolute;
+  z-index: 2000;
+  max-width: 300px;
+  min-width: 50px;
+  max-height: 300px;
+  min-height: 50px;
+  position: absolute;
+  z-index: 2000;
+  border: 1px solid #aaa;
+}
+.lswitch-cat,
+.lswitch-panel a {
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-top: 1px;
+  letter-spacing: -1px;
+}
+.lswitch-cat {
+  margin-top: 1px;
+}
+.lswitch-cat.active {
+  font-weight: bold;
+}
+.lswitch-panel a.active {
+  cursor: pointer;
+}
+.lswitch-panel .panel-default {
+  border: none;
+  background-color: #38454e;
+}
+.lswitch-panel .list-group {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+/* Added to html and body temporarily to avoid scrollbars during transitions */
+.lswitch-overflow-hidden {
+  overflow: hidden !important;
+}
+.panel-with-toolbar {
+  padding-top: 5em;
+}
+.lswitch-btndialog {
+  font-size: 1.4em;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+.lswitch-dialog {
+  overflow-y: scroll;
+}
+.lswitch-dialog .modal-body-container {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 991px) {
+  .lswitch-btnhide.btn {
+    display: none !important;
+    visibility: hidden;
+  }
+  .lswitch-cat {
+    color: #fff;
+  }
+  .lswitch-panel {
+    position: absolute !important;
+    background-color: #38454e;
+    height: 100%;
+  }
+  .lswitch-panel .panel-default > .panel-heading {
+    border: none;
+    background: none !important;
+    -webkit-filter: none;
+    filter: none;
+    color: #fff;
+  }
+  .lswitch-catcont a {
+    border: none !important;
+  }
+  .lswitch-panel a {
+    color: #fff;
+    background: none;
+  }
+  .lswitch-panel a.active,
+  .lswitch-panel a.active:hover,
+  .lswitch-panel a.active:active {
+    background: #000 !important;
+    color: #fff;
+    border: none;
+  }
+  a.list-group-item.active,
+  a.list-group-item.active:hover,
+  a.list-group-item.active:focus {
+    background: #000 !important;
+    color: #fff;
+  }
+  .lswitch-panel a:hover {
+    background: none !important;
+  }
+  .lswitch-panel .panel-default > .panel-heading {
+    background: none;
+    -webkit-filter: none !important;
+    filter: none !important;
+    color: #fff;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 992px) {
+  .lswitch-displaynone .list-group {
+    display: none;
+  }
+  .lswitch-displaynone .panel:nth-child(2) {
+    display: none;
+  }
+  .lswitch-panel.lswitch-hidden .panel-heading {
+    border-width: 1px;
+  }
+  .lswitch-panel.lswitch-hidden .panel-heading:nth-child(1) span {
+    -webkit-animation-name: slipout;
+    animation-name: slipout;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+  }
+  .lswitch-panel.lswitch-hidden .list-group {
+    opacity: 0;
+  }
+  .lswitch-panel.lswitch-hidden .panel:nth-child(2) {
+    opacity: 0;
+  }
+  .slipout-anim {
+    -webkit-animation-name: slipout;
+    animation-name: slipout;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+  }
+  a.list-group-item {
+    color: #000;
+  }
+  a.list-group-item.active,
+  a.list-group-item.active:hover,
+  a.list-group-item.active:focus {
+    z-index: 2;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border-color: #ccc !important;
+  }
+  .lswitch-panel a.active,
+  .lswitch-panel a.active:hover,
+  .lswitch-panel a.active:active {
+    background: none;
+    -webkit-filter: none !important;
+    filter: none !important;
+    background-image: none !important;
+    text-shadow: none !important;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+    color: #000;
+    color: #000;
+  }
+  .lswitch-catcont.lswitch-catcont-visible a {
+    border: 1px solid #ccc;
+    border-width: 0 1px !important;
+  }
+  .lswitch-cat:hover {
+    background-color: #fafafa;
+  }
+  .lswitch-cat.open,
+  .lswitch-cat.open:hover {
+    background: none;
+    background-image: none;
+    -webkit-filter: none;
+    filter: none;
+    background-color: #fff;
+    background-color: #fff;
+    color: #000;
+  }
+  .list-group-item.lswitch-cat.active,
+  .list-group-item.lswitch-cat.active:focus,
+  .list-group-item.lswitch-cat.active:hover,
+  .list-group-item.lswitch-cat.open.active,
+  .list-group-item.lswitch-cat.open.active:focus,
+  .list-group-item.lswitch-cat.open.active:hover {
+    background: none;
+    background-image: none;
+    -webkit-filter: none !important;
+    filter: none !important;
+    background-color: #fff;
+  }
+  .lswitch-cat {
+    background: none;
+    background-image: none;
+    color: #000;
+    background-color: #fff;
+    outline: 1px solid #ccc;
+    letter-spacing: -1px;
+  }
+  .leaflet-left {
+    left: 325px;
+  }
+  .lswitch-catcont {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .lswitch-cat i {
+    -webkit-transition: -webkit-transform 0.2s, color 0.1s;
+    transition: transform 0.2s, color 0.1s;
+    font-size: 1em;
+  }
+  .lswitch-cat i:hover {
+    color: #00eded;
+  }
+  #mapdiv {
+    margin-left: 0px !important;
+  }
+  #lswitch-btn {
+    display: none !important;
+  }
+  .lswitch-panel {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    display: block !important;
+    background-color: none;
+    -webkit-filter: none !important;
+    filter: none !important;
+    background-color: rgba(255,255,255,0);
+    z-index: 900;
+    max-height: 100%;
+    position: relative;
+  }
+  .lswitch-panel a {
+    border-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+  }
+  .lswitch-panel a:hover,
+  .lswitch-panel a:active,
+  .lswitch-panel a.active:hover,
+  .lswitch-panel a.active:active {
+    background-color: rgba(245,245,245,0.9);
+  }
+  .lswitch-panel .panel-default {
+    border: none;
+    background: none;
+    -webkit-filter: none !important;
+    filter: none !important;
+  }
+  #lswitch-olcont,
+  #lswitch-blcont {
+    background-color: none;
+    margin-top: -1px;
+  }
+  #lswitch-olcont a:last-child,
+  #lswitch-blcont a:last-child {
+    border-radius: 0 0 0.4em 0.4em;
+  }
+}
+@-webkit-keyframes slipout {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes slipout {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}

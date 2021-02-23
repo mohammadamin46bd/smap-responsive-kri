@@ -1,0 +1,18 @@
+#malmo-masthead {
+  z-index: 1999;
+}
+#malmo-masthead .dropdown-menu {
+  overflow-y: auto !important;
+}
+#smap-search-div.malmoheader-offset-top,
+.leaflet-top.leaflet-right.malmoheader-offset-top,
+.thandler-btn.malmoheader-offset-top {
+  top: 48px;
+  margin-top: 0;
+}
+.map-with-header .lswitch-panel {
+  padding-top: 48px;
+}
+#smap-search-div .dropdown-menu li {
+  font-size: 14px;
+}

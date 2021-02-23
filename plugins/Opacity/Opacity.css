@@ -1,0 +1,79 @@
+.leaflet-control-opacity {
+  z-index: 1000;
+}
+.smap-opacity-popcontainer {
+  padding: 0.1em 0;
+  font-size: 0.8em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.smap-opacity-popcontainer.smap-opacity-scrollable {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 2.5em;
+  margin-right: -1em;
+}
+.smap-opacity-sliderrow-container {
+  margin-top: 2em;
+  padding: 0.1em 0 1em 0;
+  z-index: 1000;
+}
+.smap-opacity-headerrow {
+  width: 100%;
+}
+.smap-opacity-headerrow label {
+  font-weight: bold;
+}
+.smap-opacity-headerrow label:nth-child(1) {
+  float: left;
+}
+.smap-opacity-headerrow label:nth-child(2) {
+  float: right;
+}
+.smap-opacity-valuerow {
+  text-align: left;
+}
+.smap-opacity-valuerow span {
+  display: inline-block;
+}
+.smap-opacity-valuerow span:nth-child(1) {
+  float: left;
+  max-width: 70%;
+}
+.smap-opacity-valuerow span:nth-child(2) {
+  float: right;
+}
+.smap-opacity-row {
+  margin-top: 1em;
+  width: 100%;
+}
+.smap-opacity-btnresetrow {
+  width: 100%;
+  padding: 0.6em 1em 1.9em 1em;
+  border-top: 1px solid #ddd;
+}
+.smap-opacity-btnresetrow .smap-opacity-btnhideall {
+  float: left;
+}
+.smap-opacity-btnresetrow .smap-opacity-btnreset {
+  float: right;
+}
+@media (min-width: 30em) {
+  .opacity-popover {
+    left: auto !important;
+    right: 0.2em;
+  }
+  .opacity-popover .arrow {
+    left: auto !important;
+    right: 12px;
+  }
+}
+/*.slider-selection*/
+/*
+.tooltip-main
+	background #000
+	color #fff
+	z-index 2000000
+	padding 2em*/

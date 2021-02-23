@@ -1,0 +1,57 @@
+.thandler-btn {
+  display: none;
+  z-index: 1001;
+  position: absolute;
+  left: auto;
+  right: 5px;
+  top: 5px;
+}
+.thandler-btn button {
+  width: 52px;
+  height: 47px;
+  border-radius: 0 !important;
+}
+.mf-v4 .thandler-btn {
+  top: 48px;
+}
+.thandler-deactivated {
+  display: none !important;
+}
+.thandler-container.thandler-visible {
+  display: block;
+}
+@media (min-width: 400px) {
+  .thandler-popover {
+    max-width: none;
+  }
+}
+.thandler-collapsed .thandler-btn {
+  display: block;
+}
+.thandler-collapsed .thandler-container {
+  display: none;
+}
+.thandler-collapsed .thandler-popover {
+  left: auto !important;
+  right: 0.2em;
+}
+.thandler-collapsed .thandler-popover > .popover-content {
+  padding: 0;
+  padding-bottom: 1em;
+}
+.thandler-collapsed .thandler-popover > .popover-content .leaflet-control {
+  clear: none;
+  margin: 0.2em;
+}
+.thandler-collapsed .thandler-popover > .popover-content .dropdown-menu {
+  left: -17em !important;
+}
+.thandler-collapsed .thandler-arrow {
+  left: auto !important;
+  right: 17px;
+}
+.thandler-collapsed .thandler-popover > .popover-content .leaflet-control > button,
+.thandler-collapsed .thandler-popover > .popover-content .leaflet-control .btn-group > button {
+  width: 2.75em;
+  height: 2.4em;
+}

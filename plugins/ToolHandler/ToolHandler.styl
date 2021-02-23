@@ -1,0 +1,69 @@
+generalMargins = 5px
+fontFamily = "OpenSans", "Droid Sans", "Verdana", "DejaVu Sans", "Bitstream Vera Sans", sans-serif
+
+.thandler-btn
+	display none
+	z-index 1001
+	position absolute
+	left auto
+	right generalMargins
+	top generalMargins // Fit search field's style
+	button
+		width 52px
+		height 47px
+		border-radius 0 !important
+
+.mf-v4 .thandler-btn
+	top 48px
+
+// .btn-group-vertical > .th-btn
+// 	margin 0px 0px 5px 0px !important
+
+// .leaflet-top.leaflet-right .leaflet-control, .thandler-container .leaflet-control
+
+.thandler-deactivated
+	display none !important
+
+.thandler-container.thandler-visible
+	display block
+
+@media (min-width: 400px)
+	.thandler-popover
+		max-width none // only allow tool buttons on more than one line if really small screen width
+
+
+	
+.thandler-collapsed
+	.thandler-btn
+		display block
+	.thandler-container
+		display none
+
+	.thandler-popover
+		left auto !important
+		right .2em
+	.thandler-popover > .popover-content
+		padding 0
+		padding-bottom 1em
+		.leaflet-control
+			clear none
+			margin .2em
+		.dropdown-menu
+			// TODO: Implement this only for IE9<=
+			left -17em !important
+	.thandler-arrow
+		left auto !important
+		right 17px
+	
+	.thandler-popover > .popover-content .leaflet-control > button, .thandler-popover > .popover-content .leaflet-control .btn-group > button
+		width 2.75em
+		height 2.4em
+
+// @media (max-width: 480px)
+// 	// Move down below search field
+// 	.thandler-btn
+// 		top 6em
+	
+
+
+

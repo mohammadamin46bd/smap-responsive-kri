@@ -1,0 +1,25 @@
+
+.leaflet-label {
+	background: #000;
+	background: rgba(0,0,0,0.5) !important;
+	color: #fff !important;
+}
+
+
+/*#sharepos-gui {
+	position: absolute;
+	right: 5em;
+	bottom: .5em;
+	z-index: 1001;
+	float: left;
+	margin-right: 25px;
+	min-width: 90px;
+	white-space: nowrap;
+	
+}
+#sharepos-gui input {
+	-webkit-transition: width .2s;
+	-moz-transition: width .2s;
+	-o-transition: width .2s;
+	transition: width .2s;
+}*/

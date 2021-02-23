@@ -1,0 +1,76 @@
+
+// This breakpoint should ideally be same as ToolHandler's breakPoint 
+// so that the opacity tool is appropriately shown when inside the toolhandler container
+collapseBreakPoint = 30em
+
+.leaflet-control-opacity
+	z-index 1000 // makes drop down go on top of other tool buttons
+
+.smap-opacity-popcontainer
+	padding 0.1em 0
+	font-size 0.8em
+	user-select none
+
+.smap-opacity-popcontainer.smap-opacity-scrollable
+	overflow-x hidden
+	overflow-y auto
+	// Prevent sliders to go behind scrollbar
+	padding-right 2.5em
+	margin-right -1em
+
+.smap-opacity-sliderrow-container
+	margin-top 2em
+	padding 0.1em 0 1em 0
+	z-index 1000
+
+.smap-opacity-headerrow
+	width 100%
+	label
+		font-weight bold
+	label:nth-child(1)
+		float left
+	label:nth-child(2)
+		float right
+
+.smap-opacity-valuerow
+	text-align left
+	span
+		display inline-block
+	span:nth-child(1)
+		float left
+		max-width 70%
+		// margin-left -0.8em
+	span:nth-child(2)
+		float right
+		// margin-right -1em
+
+.smap-opacity-row
+	margin-top 1em
+	width 100%
+
+.smap-opacity-btnresetrow
+	width 100%
+	padding 0.6em 1em 1.9em 1em // 0.6em 1em
+	border-top 1px solid #ddd
+	.smap-opacity-btnhideall
+		float left
+	.smap-opacity-btnreset
+		float right
+
+@media (min-width: collapseBreakPoint)
+	// Add an offset so that the popover don't go outside the window
+	.opacity-popover
+		left auto !important
+		right 0.2em
+		.arrow
+			left auto !important
+			right 12px
+
+
+/*.slider-selection*/
+/*
+.tooltip-main
+	background #000
+	color #fff
+	z-index 2000000
+	padding 2em*/

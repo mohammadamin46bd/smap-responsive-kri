@@ -1,0 +1,61 @@
+.leaflet-bar
+	box-shadow none
+	border 1px solid #ccc
+	border-radius 0
+	a, a:last-child
+		border-radius 0
+
+
+.leaflet-control-container .smap-editor-savetoolbar
+	z-index 1002
+	top -2px
+	left 14px
+	pointer-events all
+	white-space nowrap
+	min-width 25em
+	button
+		// min-width 8em
+		max-width none
+
+	// text-align center
+
+// .leaflet-edit-marker-selected
+// 	// Fix the width and height which is distorted otherwise
+// 	width 33px !important
+// 	height 49px !important
+
+
+.editor-popup-edit button
+	min-width 8em
+
+.smap-editor-btnadd
+	z-index 2000
+	top 4px
+	left 4px
+	position relative
+	cursor pointer
+	pointer-events all
+	padding .5em .7em .4em .8em
+	margin 0
+	i
+		font-size 1.5em
+
+.smap-editor-switcher-icon
+	display inline
+	position relative
+	right 0
+	bottom 0
+	color #000
+	cursor pointer
+	font-size 1.5em
+	float right
+.smap-editor-switcher-icon:hover
+	color #d43f3a
+	
+.list-group-item.list-group-item-danger
+	background-color #d9534f !important
+	border-color #d43f3a !important
+	color #fff !important
+	.smap-editor-switcher-icon
+		color #fff
+
